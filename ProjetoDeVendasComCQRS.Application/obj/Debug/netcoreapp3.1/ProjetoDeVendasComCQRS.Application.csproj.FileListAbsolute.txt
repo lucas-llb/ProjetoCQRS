@@ -1,0 +1,4 @@
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.csprojAssemblyReference.cache
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.AssemblyInfoInputs.cache
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.AssemblyInfo.cs
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.csproj.CoreCompileInputs.cache

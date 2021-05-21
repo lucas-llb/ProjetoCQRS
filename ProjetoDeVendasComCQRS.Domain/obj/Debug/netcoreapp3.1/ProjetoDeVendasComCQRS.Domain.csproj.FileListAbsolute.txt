@@ -1,0 +1,9 @@
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Domain\bin\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Domain.deps.json
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Domain\bin\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Domain.dll
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Domain\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Domain.csprojAssemblyReference.cache
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Domain\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Domain.AssemblyInfoInputs.cache
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Domain\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Domain.AssemblyInfo.cs
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Domain\bin\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Domain.pdb
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Domain\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Domain.csproj.CoreCompileInputs.cache
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Domain\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Domain.dll
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Domain\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Domain.pdb

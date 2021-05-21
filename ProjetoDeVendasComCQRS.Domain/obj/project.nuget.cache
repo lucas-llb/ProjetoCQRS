@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qsOEbx2wOMjrLqaxky891dd2FwntV4j8MWYinKRiZv0FhFmM3R02u5vhvqCrEPXNwdwemDDE2y5xJPGcA3mVHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lucas.barbosa\\Documents\\GitHub\\Exercicios\\ProjetoDeVendasComCQRS\\ProjetoDeVendasComCQRS.Domain\\ProjetoDeVendasComCQRS.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucas.barbosa\\.nuget\\packages\\extensions.fluentvalidation.br\\1.0.2\\extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
+    "C:\\Users\\lucas.barbosa\\.nuget\\packages\\fluentvalidation\\10.1.0\\fluentvalidation.10.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
