@@ -4,9 +4,12 @@ namespace ProjetoDeVendasComCQRS.Domain.Commands.Cliente
 {
     public class ClienteCommand : CommandBase
     {
-        public Guid Id { get; protected set; }
-        public string Nome { get; protected set; }
-        public string Cpf { get; protected set; }
-        public string Email { get; protected set; }
+        public Guid Id { get; set; }
+        public string Nome { get; set; }
+        public string Cpf { get; set; }
+        public string Email { get; set; }
+        public ClienteCommand()
+        {
+        }
     }
 }

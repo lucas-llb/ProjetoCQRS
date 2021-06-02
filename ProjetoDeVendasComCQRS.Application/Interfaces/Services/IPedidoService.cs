@@ -1,5 +1,5 @@
 ﻿using ProjetoDeVendasComCQRS.Domain.Commands.Pedido;
-using ProjetoDeVendasComCQRS.Domain.Entidades;
+using ProjetoDeVendasComCQRS.Domain.Document;
 using ProjetoDeVendasComCQRS.Domain.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -11,6 +11,6 @@ namespace ProjetoDeVendasComCQRS.Application.Interfaces.Services
         Task<ResponseToUser> CreateAsync(AdicionarPedidoCommand command);
         Task<ResponseToUser> UpdateAsync(EditarPedidoCommand command);
         Task<ResponseToUser> RemoveAsync(RemoverPedidoCommand command);
-        Task<IEnumerable<Pedido>> GetAllAsync();
+        IEnumerable<PedidoDocument> GetAllAsync();
     }
 }

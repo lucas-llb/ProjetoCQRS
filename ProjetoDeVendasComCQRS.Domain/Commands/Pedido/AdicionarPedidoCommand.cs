@@ -4,6 +4,9 @@ namespace ProjetoDeVendasComCQRS.Domain.Commands.Pedido
 {
     public class AdicionarPedidoCommand : PedidoCommand
     {
+        public AdicionarPedidoCommand()
+        {
+        }
         public AdicionarPedidoCommand(int quantidade, double valorTotal, DateTime data, Guid produtoId, Guid clienteId)
         {
             Quantidade = quantidade;

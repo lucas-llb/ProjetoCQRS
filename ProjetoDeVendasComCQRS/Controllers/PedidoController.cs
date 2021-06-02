@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ProjetoDeVendasComCQRS.Application.Interfaces.Services;
 using ProjetoDeVendasComCQRS.Domain.Commands.Pedido;
+using System;
+using System.Threading.Tasks;
 
 namespace ProjetoDeVendasComCQRS.Controllers
 {
@@ -67,11 +65,11 @@ namespace ProjetoDeVendasComCQRS.Controllers
 
         [HttpGet]
         [Route("listar")]
-        public async Task<IActionResult> Get()
+        public IActionResult Get()
         {
             try
             {
-                return Ok(await _pedidoService.GetAllAsync());
+                return Ok(_pedidoService.GetAllAsync());
             }
             catch (Exception ex)
             {

@@ -2,6 +2,9 @@
 {
     public class AdicionarClienteCommand : ClienteCommand
     {
+        public AdicionarClienteCommand()
+        {
+        }
         public AdicionarClienteCommand(string nome, string cpf, string email)
         {
             Nome = nome;

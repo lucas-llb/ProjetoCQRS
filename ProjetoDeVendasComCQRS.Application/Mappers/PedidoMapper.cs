@@ -12,9 +12,10 @@ namespace ProjetoDeVendasComCQRS.Application.Mappers
         private readonly IPedidoRepository _pedidoRepository;
         private readonly IProdutoRepository _produtoRepository;
 
-        public PedidoMapper(IPedidoRepository pedidoRepository)
+        public PedidoMapper(IPedidoRepository pedidoRepository, IProdutoRepository produtoRepository)
         {
             _pedidoRepository = pedidoRepository;
+            _produtoRepository = produtoRepository;
         }
 
         public async Task<Pedido> ConverterAdicionar(AdicionarPedidoCommand command)

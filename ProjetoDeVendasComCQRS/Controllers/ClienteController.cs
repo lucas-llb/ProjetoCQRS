@@ -19,7 +19,7 @@ namespace ProjetoDeVendasComCQRS.Controllers
 
         [HttpPost]
         [Route("cadastrar")]
-        public async Task<IActionResult> Post(AdicionarClienteCommand command)
+        public async Task<IActionResult> Post([FromBody] AdicionarClienteCommand command)
         {
             var result = await _clienteService.CreateAsync(command);
             if (result.Success)

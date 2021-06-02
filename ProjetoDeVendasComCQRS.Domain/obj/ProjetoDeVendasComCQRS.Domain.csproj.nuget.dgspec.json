@@ -47,6 +47,24 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[10.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.12.3, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.12.3, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

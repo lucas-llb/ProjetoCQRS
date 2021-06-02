@@ -6,12 +6,15 @@ namespace ProjetoDeVendasComCQRS.Domain.Commands.Pedido
 {
     public class PedidoCommand : CommandBase
     {
-        public Guid Id { get; protected set; }
-        public Guid ProdutoId { get; protected set; }
-        public int Quantidade { get; protected set; }
-        public double ValorTotal { get; protected set; }
-        public DateTime Data { get; protected set; }
-        public Guid ClienteId { get; protected set; }
+        public Guid Id { get; set; }
+        public Guid ProdutoId { get; set; }
+        public int Quantidade { get; set; }
+        public double ValorTotal { get; set; }
+        public DateTime Data { get; set; }
+        public Guid ClienteId { get; set; }
 
+        public PedidoCommand()
+        {
+        }
     }
 }

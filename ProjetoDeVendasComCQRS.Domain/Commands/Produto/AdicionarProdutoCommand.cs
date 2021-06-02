@@ -2,6 +2,9 @@
 {
     public class AdicionarProdutoCommand : ProdutoCommand
     {
+        public AdicionarProdutoCommand()
+        {
+        }
         public AdicionarProdutoCommand(string nome, double preco)
         {
             Nome = nome;
