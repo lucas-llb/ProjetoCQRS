@@ -4,6 +4,9 @@ namespace ProjetoDeVendasComCQRS.Domain.Commands.Pedido
 {
     public class EditarPedidoCommand : PedidoCommand
     {
+        public EditarPedidoCommand()
+        {
+        }
         public EditarPedidoCommand(Guid id, int quantidade, double valorTotal, DateTime data, Guid produtoId, Guid clienteId)
         {
             Id = id;

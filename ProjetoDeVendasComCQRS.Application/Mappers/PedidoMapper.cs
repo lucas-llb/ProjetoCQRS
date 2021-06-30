@@ -1,6 +1,7 @@
 ﻿using ProjetoDeVendasComCQRS.Application.Interfaces.Mappers;
 using ProjetoDeVendasComCQRS.Domain.Commands.Pedido;
 using ProjetoDeVendasComCQRS.Domain.Entidades;
+using ProjetoDeVendasComCQRS.Domain.Eventos;
 using ProjetoDeVendasComCQRS.Domain.Interfaces.Repository;
 using System;
 using System.Threading.Tasks;
@@ -43,6 +44,40 @@ namespace ProjetoDeVendasComCQRS.Application.Mappers
             entidade.Data = DateTime.Now;
             entidade.ValorTotal = valorTotal;
             return entidade;
+        }
+
+        public PedidoCriadoEvent ConverterPedidoCriadoEvent(Pedido entidade)
+        {
+            return new PedidoCriadoEvent
+            {
+                IdBanco = entidade.Id,
+                ClienteId = entidade.ClienteId,
+                ProdutoId = entidade.ProdutoId,
+                Quantidade = entidade.Quantidade,
+                ValorTotal = entidade.ValorTotal,
+                Data = entidade.Data
+            };
+        }
+
+        public PedidoAlteradoEvent ConverterPedidoAlteradoEvent(Pedido entidade)
+        {
+            return new PedidoAlteradoEvent
+            {
+                IdBanco = entidade.Id,
+                ClienteId = entidade.ClienteId,
+                ProdutoId = entidade.ProdutoId,
+                Quantidade = entidade.Quantidade,
+                ValorTotal = entidade.ValorTotal,
+                Data = entidade.Data
+            };
+        }
+
+        public PedidoRemovidoEvent ConverterPedidoRemovidoEvent(Guid id)
+        {
+            return new PedidoRemovidoEvent
+            {
+                IdBanco = id
+            };
         }
     }
 }

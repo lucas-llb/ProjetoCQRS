@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JMSiTzTKmdYqPlKS9qLXuy1U5aDl6PmskAaWZj//Q/DcLfbvwZS0g1E/L84/oqbUdGfoZWp7v2H+/Ls/dbL/0g==",
+  "dgSpecHash": "CkAyMshYdWDdYRL1EEHbov8jFB9+tcg7IzbFKoG9lA7P5vZ6tCcnfELEtAQrK5Zg9sjayvJi+ncBe1bCjhq1kA==",
   "success": true,
   "projectFilePath": "C:\\Users\\lucas.barbosa\\Documents\\GitHub\\Exercicios\\ProjetoDeVendasComCQRS\\ProjetoDeVendasComCQRS.Domain\\ProjetoDeVendasComCQRS.Domain.csproj",
   "expectedPackageFiles": [

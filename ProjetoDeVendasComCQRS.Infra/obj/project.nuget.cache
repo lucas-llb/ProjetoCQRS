@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rwy6ucyOeuV8Uz+I1f3HrMaE2qrps+BIL6WDWEf7Hyli6uKwxdQ9mLtnRrD74vI869EFLTHQKQXmNAOsJoA4Mw==",
+  "dgSpecHash": "sbAYMwu9aqcroYbL3M5+MQfRc8mAzF1MPHU8JXt4NFCiQQtqXSmxuswwoPbIgvl1xd+CiXbhJQevDu0mn7RNOg==",
   "success": true,
   "projectFilePath": "C:\\Users\\lucas.barbosa\\Documents\\GitHub\\Exercicios\\ProjetoDeVendasComCQRS\\ProjetoDeVendasComCQRS.Infra\\ProjetoDeVendasComCQRS.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
+    "C:\\Users\\lucas.barbosa\\.nuget\\packages\\easynetq\\6.3.1\\easynetq.6.3.1.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\extensions.fluentvalidation.br\\1.0.2\\extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\fluentvalidation\\10.1.0\\fluentvalidation.10.1.0.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -23,6 +24,8 @@
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\lucas.barbosa\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\lucas.barbosa\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\5.0.0\\microsoft.extensions.hosting.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",

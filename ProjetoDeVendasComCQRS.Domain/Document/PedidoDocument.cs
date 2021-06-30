@@ -17,5 +17,8 @@ namespace ProjetoDeVendasComCQRS.Domain.Document
         public DateTime Data { get; set; }
         public DateTime UltimaAlteracao { get; set; }
 
+        public PedidoDocument()
+        {
+        }
     }
 }

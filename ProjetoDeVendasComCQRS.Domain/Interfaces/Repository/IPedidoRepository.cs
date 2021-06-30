@@ -12,6 +12,8 @@ namespace ProjetoDeVendasComCQRS.Domain.Interfaces.Repository
         Task CreateAsync(Pedido entity);
         Task UpdateAsync(Pedido entity);
         Task DeleteAsync(Guid id);
+        Task<Pedido> CreateAsyncWithReturn(Pedido entity);
+        Task<Pedido> UpdateAsyncWithReturn(Pedido entity);
         bool VerificarSePedidoExiste(Guid id);
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
+using ProjetoDeVendasComCQRS.Application.Interfaces;
 using ProjetoDeVendasComCQRS.Application.Interfaces.Mappers;
 using ProjetoDeVendasComCQRS.Application.Interfaces.Services;
 using ProjetoDeVendasComCQRS.Application.Mappers;
@@ -21,6 +22,7 @@ using ProjetoDeVendasComCQRS.Domain.Validation.Cliente;
 using ProjetoDeVendasComCQRS.Domain.Validation.Pedido;
 using ProjetoDeVendasComCQRS.Domain.Validation.Produto;
 using ProjetoDeVendasComCQRS.Infra.Context;
+using ProjetoDeVendasComCQRS.Infra.Menssageria;
 using ProjetoDeVendasComCQRS.Infra.Publisher;
 using ProjetoDeVendasComCQRS.Infra.Repository;
 
@@ -40,11 +42,10 @@ namespace ProjetoDeVendasComCQRS
         {
             AddDbContextCollection(services);
             services.AddControllers();
-            services.Configure<RabbitMqConfiguration>(Configuration.GetSection("RabbitMqConfig"));
             services.Configure<PedidosDatabaseSettings>(Configuration.GetSection(nameof(PedidosDatabaseSettings)));
             services.AddSingleton<IPedidosDatabaseSettings>(sp => sp.GetRequiredService<IOptions<PedidosDatabaseSettings>>().Value);
             DependencyInjection(services);
-            services.AddScoped<AdicionarPedidoCommandHandler>();         
+            services.AddHostedService<MensageriaHostedService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -100,7 +101,8 @@ namespace ProjetoDeVendasComCQRS
             services.AddScoped<IClienteService, ClienteService>();
             services.AddScoped<IProdutoService, ProdutoService>();
             services.AddScoped<IPedidoService, PedidoService>();
-            services.AddScoped<IAdicionarPedidoPublisher, AdicionarPedidoPublisher>();
+            services.AddScoped<IPedidoPublisher, PedidoPublisher>();
+            services.AddScoped<IPedidoCommandHandler, PedidoCommandHandler>();
 
 
         }

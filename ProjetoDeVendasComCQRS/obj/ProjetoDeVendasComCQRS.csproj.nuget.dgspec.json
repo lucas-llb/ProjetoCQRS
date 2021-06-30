@@ -24,7 +24,8 @@
           "C:\\MySupplyPack": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\lucas.barbosa\\Desktop\\11": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.ambevdevs.com.br/nexus/repository/nuget-hosted/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -44,6 +45,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -110,7 +115,8 @@
           "C:\\MySupplyPack": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\lucas.barbosa\\Desktop\\11": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.ambevdevs.com.br/nexus/repository/nuget-hosted/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -192,11 +198,15 @@
           "C:\\MySupplyPack": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\lucas.barbosa\\Desktop\\11": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.ambevdevs.com.br/nexus/repository/nuget-hosted/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\Users\\lucas.barbosa\\Documents\\GitHub\\Exercicios\\ProjetoDeVendasComCQRS\\ProjetoDeVendasComCQRS.Application\\ProjetoDeVendasComCQRS.Application.csproj": {
+                "projectPath": "C:\\Users\\lucas.barbosa\\Documents\\GitHub\\Exercicios\\ProjetoDeVendasComCQRS\\ProjetoDeVendasComCQRS.Application\\ProjetoDeVendasComCQRS.Application.csproj"
+              },
               "C:\\Users\\lucas.barbosa\\Documents\\GitHub\\Exercicios\\ProjetoDeVendasComCQRS\\ProjetoDeVendasComCQRS.Domain\\ProjetoDeVendasComCQRS.Domain.csproj": {
                 "projectPath": "C:\\Users\\lucas.barbosa\\Documents\\GitHub\\Exercicios\\ProjetoDeVendasComCQRS\\ProjetoDeVendasComCQRS.Domain\\ProjetoDeVendasComCQRS.Domain.csproj"
               }
@@ -212,6 +222,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.6, )"
@@ -231,6 +245,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.6, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
@@ -284,7 +302,8 @@
           "C:\\MySupplyPack": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\lucas.barbosa\\Desktop\\11": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.ambevdevs.com.br/nexus/repository/nuget-hosted/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

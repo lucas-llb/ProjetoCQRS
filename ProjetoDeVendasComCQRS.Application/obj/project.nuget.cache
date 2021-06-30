@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "sxXPFGwfY4OHmr+/ehdJ7Ocj6bZR6aFdrvhCMgi4Ibr7MCvz7dRStw6Noi4b+zMapI4ThUaRvTET2OOHuFrwEg==",
+  "dgSpecHash": "xNMCSHyyWVz0FVLCbpaYvWHfxBc8ZeLnupvMoiQAMxjXXp6fsuzXT+BIBWRfbe2FoobFfCtYDnweJCFqbm5hhQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\lucas.barbosa\\Documents\\GitHub\\Exercicios\\ProjetoDeVendasComCQRS\\ProjetoDeVendasComCQRS.Application\\ProjetoDeVendasComCQRS.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
+    "C:\\Users\\lucas.barbosa\\.nuget\\packages\\easynetq\\6.3.1\\easynetq.6.3.1.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\extensions.fluentvalidation.br\\1.0.2\\extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\fluentvalidation\\10.1.0\\fluentvalidation.10.1.0.nupkg.sha512",
     "C:\\Users\\lucas.barbosa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

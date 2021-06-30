@@ -1,20 +1,14 @@
 ﻿using FluentValidation;
-using Microsoft.Extensions.Options;
 using ProjetoDeVendasComCQRS.Application.Interfaces.Mappers;
 using ProjetoDeVendasComCQRS.Application.Interfaces.Services;
-using ProjetoDeVendasComCQRS.Domain.Commands;
 using ProjetoDeVendasComCQRS.Domain.Commands.Pedido;
-using ProjetoDeVendasComCQRS.Domain.Entidades;
-using ProjetoDeVendasComCQRS.Domain.Interfaces.Repository;
-using ProjetoDeVendasComCQRS.Domain.Models;
-using RabbitMQ.Client;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Text;
 using ProjetoDeVendasComCQRS.Domain.Document;
 using ProjetoDeVendasComCQRS.Domain.Interfaces.Publisher;
+using ProjetoDeVendasComCQRS.Domain.Interfaces.Repository;
+using ProjetoDeVendasComCQRS.Domain.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ProjetoDeVendasComCQRS.Application.Services
 {
@@ -26,7 +20,8 @@ namespace ProjetoDeVendasComCQRS.Application.Services
         private readonly IValidator<RemoverPedidoCommand> _removerValidator;
         private readonly IPedidoMapper _pedidoMapper;
         private readonly IPedidoMongoRepository _pedidoMongoRepository;
-        private readonly IAdicionarPedidoPublisher _publisher;
+        private readonly IPedidoPublisher _publisher;
+
         public PedidoService(
             IPedidoRepository pedidoRepository,
             IValidator<AdicionarPedidoCommand> adicionarValidator,
@@ -34,7 +29,7 @@ namespace ProjetoDeVendasComCQRS.Application.Services
             IValidator<RemoverPedidoCommand> removerValidator,
             IPedidoMapper pedidoMapper,
             IPedidoMongoRepository pedidoMongoRepository,
-            IAdicionarPedidoPublisher publisher)
+            IPedidoPublisher publisher)
         {
             _pedidoRepository = pedidoRepository;
             _adicionarValidator = adicionarValidator;
@@ -53,9 +48,9 @@ namespace ProjetoDeVendasComCQRS.Application.Services
                 return ErrorResult(result.Errors.Select(q => q.ErrorMessage));
             }
             var entidade = await _pedidoMapper.ConverterAdicionar(command);
-            await _pedidoRepository.CreateAsync(entidade);
+            var entidadePersistida = await _pedidoRepository.CreateAsyncWithReturn(entidade);
 
-            _publisher.Publisher(command);
+            _publisher.Publisher(_pedidoMapper.ConverterPedidoCriadoEvent(entidadePersistida));
 
             return SuccessResult();
         }
@@ -68,9 +63,9 @@ namespace ProjetoDeVendasComCQRS.Application.Services
                 return ErrorResult(result.Errors.Select(q => q.ErrorMessage));
             }
             var entidade = await _pedidoMapper.ConverterEditar(command);
-            await _pedidoRepository.UpdateAsync(entidade);
+            var entidadePersistida = await _pedidoRepository.UpdateAsyncWithReturn(entidade);
 
-            //Publisher(command);
+            _publisher.Publisher(_pedidoMapper.ConverterPedidoAlteradoEvent(entidadePersistida));
 
             return SuccessResult();
         }
@@ -84,7 +79,7 @@ namespace ProjetoDeVendasComCQRS.Application.Services
             }
             await _pedidoRepository.DeleteAsync(command.Id);
 
-            //Publisher(command);
+            _publisher.Publisher(_pedidoMapper.ConverterPedidoRemovidoEvent(command.Id));
 
             return SuccessResult();
         }

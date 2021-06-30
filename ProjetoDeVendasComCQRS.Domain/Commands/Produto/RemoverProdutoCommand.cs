@@ -6,6 +6,9 @@ namespace ProjetoDeVendasComCQRS.Domain.Commands.Produto
 {
     public class RemoverProdutoCommand : ProdutoCommand
     {
+        public RemoverProdutoCommand()
+        {
+        }
         public RemoverProdutoCommand(Guid id)
         {
             Id = id;

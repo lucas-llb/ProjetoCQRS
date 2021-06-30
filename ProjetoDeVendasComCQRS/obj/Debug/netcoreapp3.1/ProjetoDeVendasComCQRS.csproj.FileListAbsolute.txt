@@ -86,3 +86,4 @@ C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\Projet
 C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.csproj.CoreCompileInputs.cache
 C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS\bin\Debug\netcoreapp3.1\EasyNetQ.dll

@@ -4,6 +4,9 @@ namespace ProjetoDeVendasComCQRS.Domain.Commands.Produto
 {
     public class EditarProdutoCommand : ProdutoCommand
     {
+        public EditarProdutoCommand()
+        {
+        }
         public EditarProdutoCommand(Guid id, string nome, double preco)
         {
             Id = id;

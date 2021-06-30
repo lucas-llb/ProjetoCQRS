@@ -11,5 +11,5 @@ C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\Projet
 C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.pdb
 C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\bin\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.runtimeconfig.json
 C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\bin\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.runtimeconfig.dev.json
-C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.csproj.CoreCompileInputs.cache
 C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.genruntimeconfig.cache
+C:\Users\lucas.barbosa\Documents\GitHub\Exercicios\ProjetoDeVendasComCQRS\ProjetoDeVendasComCQRS.Application\obj\Debug\netcoreapp3.1\ProjetoDeVendasComCQRS.Application.csproj.CoreCompileInputs.cache

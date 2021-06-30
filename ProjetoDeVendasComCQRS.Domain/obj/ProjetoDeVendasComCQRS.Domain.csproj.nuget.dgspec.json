@@ -24,7 +24,8 @@
           "C:\\MySupplyPack": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Users\\lucas.barbosa\\Desktop\\11": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.ambevdevs.com.br/nexus/repository/nuget-hosted/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {

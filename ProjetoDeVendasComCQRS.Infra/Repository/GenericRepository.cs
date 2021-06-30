@@ -33,6 +33,13 @@ namespace ProjetoDeVendasComCQRS.Infra.Repository
             _dbContext.SaveChanges();
         }
 
+        public async Task<TEntity> CreateAsyncWithReturn(TEntity entity)
+        {
+            var entidade = await _dbSet.AddAsync(entity);
+            _dbContext.SaveChanges();
+            return entidade.Entity;
+        }
+
         public async Task UpdateAsync(TEntity entity)
         {
             EntityEntry<TEntity> entry;
@@ -41,6 +48,17 @@ namespace ProjetoDeVendasComCQRS.Infra.Repository
             entry.CurrentValues.SetValues(entity);
             entry.State = EntityState.Modified;
             _dbContext.SaveChanges();
+        }
+
+        public async Task<TEntity> UpdateAsyncWithReturn(TEntity entity)
+        {
+            EntityEntry<TEntity> entry;
+            var objToUpdate = await _dbSet.FindAsync(entity.Id);
+            entry = _dbContext.Entry(objToUpdate);
+            entry.CurrentValues.SetValues(entity);
+            entry.State = EntityState.Modified;
+            _dbContext.SaveChanges();
+            return entry.Entity;
         }
 
         public async Task DeleteAsync(Guid id)

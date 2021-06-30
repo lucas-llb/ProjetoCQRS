@@ -11,6 +11,19 @@
           "lib/netstandard2.1/DnsClient.dll": {}
         }
       },
+      "EasyNetQ/6.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "RabbitMQ.Client": "[6.2.1, 6.3.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/EasyNetQ.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/EasyNetQ.dll": {}
+        }
+      },
       "Extensions.FluentValidation.Br/1.0.2": {
         "type": "package",
         "dependencies": {
@@ -1617,6 +1630,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "EasyNetQ": "6.3.1",
           "Microsoft.Extensions.Hosting.Abstractions": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0",
           "MongoDB.Driver": "2.12.3",
@@ -1652,10 +1666,13 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "EasyNetQ": "6.3.1",
           "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.6",
+          "Microsoft.Extensions.Hosting.Abstractions": "5.0.0",
           "MongoDB.Driver": "2.12.3",
           "Newtonsoft.Json": "13.0.1",
+          "ProjetoDeVendasComCQRS.Application": "1.0.0",
           "ProjetoDeVendasComCQRS.Domain": "1.0.0",
           "RabbitMQ.Client": "6.2.1"
         },
@@ -1689,6 +1706,23 @@
         "lib/netstandard2.0/DnsClient.xml",
         "lib/netstandard2.1/DnsClient.dll",
         "lib/netstandard2.1/DnsClient.xml"
+      ]
+    },
+    "EasyNetQ/6.3.1": {
+      "sha512": "WBZxeGj5ivoCA12rnAy4hG12i8FS9mYi9o91+48fJ9Ei2+EOPsZ/6Y+C4z8Q0Rh9dgxC8rsZ2fW1qVd9yGlEUA==",
+      "type": "package",
+      "path": "easynetq/6.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easynetq.6.3.1.nupkg.sha512",
+        "easynetq.nuspec",
+        "lib/net461/EasyNetQ.dll",
+        "lib/net461/EasyNetQ.pdb",
+        "lib/net461/EasyNetQ.xml",
+        "lib/netstandard2.0/EasyNetQ.dll",
+        "lib/netstandard2.0/EasyNetQ.pdb",
+        "lib/netstandard2.0/EasyNetQ.xml"
       ]
     },
     "Extensions.FluentValidation.Br/1.0.2": {
@@ -6034,7 +6068,8 @@
         "C:\\MySupplyPack": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Users\\lucas.barbosa\\Desktop\\11": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nexus.ambevdevs.com.br/nexus/repository/nuget-hosted/": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
