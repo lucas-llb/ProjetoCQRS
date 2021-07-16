@@ -76,5 +76,19 @@ namespace ProjetoDeVendasComCQRS.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet]
+        [Route("listarporcliente")]
+        public IActionResult ListarPorCliente([FromQuery] Guid clienteId)
+        {
+            try
+            {
+                return Ok(_pedidoService.ListarPorCliente(clienteId));
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

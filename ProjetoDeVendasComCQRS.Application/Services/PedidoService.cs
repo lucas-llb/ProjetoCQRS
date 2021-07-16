@@ -6,6 +6,7 @@ using ProjetoDeVendasComCQRS.Domain.Document;
 using ProjetoDeVendasComCQRS.Domain.Interfaces.Publisher;
 using ProjetoDeVendasComCQRS.Domain.Interfaces.Repository;
 using ProjetoDeVendasComCQRS.Domain.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -89,6 +90,10 @@ namespace ProjetoDeVendasComCQRS.Application.Services
             return _pedidoMongoRepository.Get();
         }
 
+        public IEnumerable<PedidoDocument> ListarPorCliente(Guid clienteId)
+        {
+            return _pedidoMongoRepository.ListarPorCliente(clienteId);
+        }
 
     }
 

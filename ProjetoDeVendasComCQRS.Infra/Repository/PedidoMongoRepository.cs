@@ -45,5 +45,10 @@ namespace ProjetoDeVendasComCQRS.Infra.Repository
         {
             await _pedidos.DeleteOneAsync(p => p.IdBanco == id);
         }
+
+        public IEnumerable<PedidoDocument> ListarPorCliente(Guid clienteId)
+        {
+            return _pedidos.FindAsync(p => p.ClienteId == clienteId).GetAwaiter().GetResult().ToEnumerable();
+        }
     }
 }

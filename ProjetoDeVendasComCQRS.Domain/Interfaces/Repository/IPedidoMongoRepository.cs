@@ -12,5 +12,6 @@ namespace ProjetoDeVendasComCQRS.Domain.Interfaces.Repository
         Task<PedidoDocument> CreateAsync(PedidoDocument pedido);
         Task UpdateAsync(Guid id, PedidoDocument pedido);
         Task RemoveAsync(Guid id);
+        IEnumerable<PedidoDocument> ListarPorCliente(Guid clienteId);
     }
 }
